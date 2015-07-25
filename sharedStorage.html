@@ -1,0 +1,19 @@
+<head>
+  <title>sharedStorage</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+    Connected to SERVO_ID: {{servoId}}
+    <hr>
+    <button id="write">Write</button>
+    <input id="writeText" value="hello world">
+    <hr>
+    <button id="read">Read</button>
+    <span>Text={{readText}}</span>
+</template>
